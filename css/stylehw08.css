@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: bisque;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+header {
+  background-color: aquamarine;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  padding-top: 60px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.left li, .right li {
+  border: 1px solid black;
+  padding:10px 0px 10px 0px;
+}
+
+.left {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  top: 60px;
+  left: 0;
+  overflow: auto;
+  text-align: center;
+  scrollbar-width: thin;
+  background-color: brown;
+}
+
+.right {
+  position: fixed;
+  width: 150px;
+  height: 100%;
+  top: 60px;
+  right: 0;
+  overflow: auto;
+  text-align: center;
+  scrollbar-width: thin;
+  background-color: antiquewhite;
+}
+
+.middle {
+  width: 300px;
+}
+
+.middle li {
+  height: 200px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  text-align: center;
+}
